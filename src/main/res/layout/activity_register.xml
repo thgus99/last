@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="이름 : "
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:hint="이름을 입력하세요."
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="이메일 : "
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:hint="이메일을 입력하세요."
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="비밀번호 : "
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/passwordEdt"
+                android:hint="6자리 이상 입력하세요."
+                android:textSize="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="비밀번호 확인 : "
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/passwordcheckEdt"
+                android:textSize="15dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/register_btn"
+            android:onClick="join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+</LinearLayout>
